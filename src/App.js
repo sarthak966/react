@@ -80,6 +80,10 @@ function App() {
       }
       ambientC("Deactivate");
     } else {
+      let text = document.getElementsByClassName('text');
+      for(let i =0;i<text.length;i++){
+        text[i].style.textShadow = "";
+        }
       let box = document.getElementById("myBox");
       box.style.boxShadow = "";
       box.style.border = "1px solid black";
